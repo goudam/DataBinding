@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_path"
+    app:startDestination="@id/blankFragmentOne">
+
+    <fragment
+        android:id="@+id/blankFragmentOne"
+        android:name="com.example.lifecycle_navigation_compoment.BlankFragmentOne"
+        android:label="fragment_blank_one"
+        tools:layout="@layout/fragment_blank_one" >
+        <action
+            android:id="@+id/action_blankFragmentOne_to_blankFragmentTwo"
+            app:destination="@id/blankFragmentTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentTwo"
+        android:name="com.example.lifecycle_navigation_compoment.BlankFragmentTwo"
+        android:label="fragment_blank_two"
+        tools:layout="@layout/fragment_blank_two" >
+        <action
+            android:id="@+id/action_blankFragmentTwo_to_blankFragmentThree"
+            app:destination="@id/blankFragmentThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentThree"
+        android:name="com.example.lifecycle_navigation_compoment.BlankFragmentThree"
+        android:label="fragment_blank_three"
+        tools:layout="@layout/fragment_blank_three" >
+        <action
+            android:id="@+id/action_blankFragmentThree_to_blankFragmentOne"
+            app:destination="@id/blankFragmentOne" />
+    </fragment>
+</navigation>
