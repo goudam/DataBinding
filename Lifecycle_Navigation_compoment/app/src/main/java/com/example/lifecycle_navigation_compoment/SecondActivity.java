@@ -13,7 +13,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
+/*TEST*/
 //        Button button = findViewById(R.id.button_second_activity);
 //        button.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -54,6 +54,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(TAG,"onDestroy");
+
     }
 
     @Override
